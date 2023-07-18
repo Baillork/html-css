@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+      width: 80vw;
+      border-collapse: collapse;
+    }
+
+    th, td{
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    thead{
+      background-color: gray;
+      color: white;
+    }
+
+    .num{
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uso de tabelas grandes</h1>
+  <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+      THEAD
+        TR, TD, TH
+      TBODY
+        TR, TD, TH
+      TFOOT
+        TR, TD, TH
+   -->
+  <table>
+    <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Unidades federativas</th>
+        <th>População</th>
+        <th>Mudança</th>
+        <th>% da População</th>
+        <th>País comparável</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Minas Gerais</td>
+        <td class="num">20 538 718</td>
+        <td>+4.8%</td>
+        <td>10,0%</td>
+        <td>Burquina Fasso <br> (20 903 273)</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total de habitantes</td>
+        <td></td>
+        <td>263.947.234</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
