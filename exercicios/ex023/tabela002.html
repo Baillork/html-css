@@ -12,6 +12,14 @@
     table{
       width: 80vw;
       border-collapse: collapse;
+      position: relative;
+    }
+
+    caption{
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: gray;
     }
 
     th, td{
@@ -24,6 +32,20 @@
       color: white;
     }
 
+    thead>tr>th{
+      position: sticky;
+      top: 0;
+      background-color: #383838;
+    }
+
+    tbody>tr:nth-child(even){ /* 2n */
+      background-color: lightblue;
+    }
+
+    tbody>tr:nth-child(odd){ /* 2n-1 */
+      background-color: lightgray;
+    }
+
     .num{
       text-align: right;
     }
@@ -34,6 +56,7 @@
   <!-- 
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+      CAPTION
       THEAD
         TR, TD, TH
       TBODY
@@ -42,11 +65,12 @@
         TR, TD, TH
    -->
   <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
       <tr>
         <th>Posição</th>
-        <th>Unidades federativas</th>
-        <th>População</th>
+        <th scope="col" style="width: 150px;">Unidades federativas</th>
+        <th scope="col">População</th>
         <th>Mudança</th>
         <th>% da População</th>
         <th>País comparável</th>
@@ -69,14 +93,132 @@
         <td>10,0%</td>
         <td>Burquina Fasso <br> (20 903 273)</td>
       </tr>
+      <tr>
+        <td>3</td>
+        <td>Minas Gerais</td>
+        <td class="num">20 538 718</td>
+        <td>+4.8%</td>
+        <td>10,0%</td>
+        <td>Burquina Fasso <br> (20 903 273)</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>São Paulo</td>
+        <td class="num">44 420 459</td>
+        <td>+7.65%</td>
+        <td>22,2%</td>
+        <td> Espanha<br>(46 754 778)</td>
+      </tr>
     </tbody>
     <tfoot>
       <tr>
-        <td>Total de habitantes</td>
-        <td></td>
-        <td>263.947.234</td>
+        <th scope="row">Total de habitantes</th>
+        <th></th>
+        <th>263.947.234</th>
       </tr>
     </tfoot>
   </table>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui et enim quae veritatis tempore maiores natus deleniti quasi voluptates assumenda iste doloremque, quibusdam excepturi obcaecati voluptas rerum, unde totam suscipit odio quia. Dolorem eaque esse dolore velit debitis, quo cum dolorum minima ipsam accusantium ratione nostrum animi pariatur aperiam distinctio harum at eum amet soluta placeat sunt. Quibusdam dolorem voluptates quaerat eaque nam qui doloremque rem. Fuga, sapiente at nulla, distinctio similique voluptatibus quae inventore aspernatur commodi officiis sequi nobis veritatis magnam pariatur suscipit cupiditate quas praesentium necessitatibus, aliquam laboriosam mollitia nemo? Ab ex enim magni ad omnis pariatur eaque suscipit perspiciatis, non temporibus? Voluptatem cum delectus quasi nam vitae eveniet error odio explicabo accusamus qui, ad, repellendus facere eos, recusandae neque ratione ex quod. Est, totam architecto velit officia, cupiditate porro sunt numquam rem dignissimos, voluptatum nesciunt. At, assumenda voluptas praesentium voluptate nam ut quibusdam quae distinctio reprehenderit esse, nesciunt incidunt soluta ducimus odit quod atque magnam optio. Dolor labore delectus consequatur laborum ea voluptates repellat fuga laudantium! Voluptate aliquid, fuga voluptas ducimus distinctio sit ab cupiditate blanditiis tenetur exercitationem odit reiciendis maiores, accusamus eius eveniet ipsum perferendis architecto veritatis doloribus consectetur unde sunt animi ipsa. Delectus, provident esse!</p>
 </body>
 </html>
