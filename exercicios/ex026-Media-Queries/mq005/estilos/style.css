@@ -37,7 +37,11 @@ nav{
   display: none;
 }
 
-header>nav>a{
+nav> ul{
+  list-style-type: none;
+}
+
+header>nav>ul>li>a{
   display: block;
   padding: 10px;
   background-color: rgb(71, 71, 71);
@@ -47,7 +51,7 @@ header>nav>a{
   border-top: 2px solid gray;
 }
 
-header>nav>a:hover{
+header>nav>ul>li>a:hover{
   background-color: gray;
 }
 
